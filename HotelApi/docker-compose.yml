@@ -1,0 +1,28 @@
+version: '3.9'
+
+services:
+  hotelapi:
+    image: ${DOCKER_REGISTRY-}hotelapi
+    build:
+      context: .
+      dockerfile: HotelApi/Dockerfile
+    ports:
+      - "8080:8080"
+      - "8081:8081"
+    depends_on:
+      - postgres_db
+
+  postgres_db:
+    image: postgres:16-alpine
+    container_name: hotel_postgres
+    environment:
+      POSTGRES_DB: hoteldb
+      POSTGRES_USER: postgres
+      POSTGRES_PASSWORD: hotel_admin_password
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+
+volumes:
+  postgres_data:

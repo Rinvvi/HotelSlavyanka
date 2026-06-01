@@ -1,0 +1,15 @@
+﻿<Window x:Class="HotelDesktop.GuestsListWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotelDesktop"
+        mc:Ignorable="d"
+        Title="GuestsListWindow" Height="580" Width="800">
+    <Grid x:Name="База_данных_гостей" Width="600" Height="392">
+        <DataGrid x:Name="GuestsGrid" d:ItemsSource="{d:SampleData ItemCount=5}" SelectionChanged="GuestsGrid_SelectionChanged_1"/>
+        <Button Content="Добавить гостя" HorizontalAlignment="Left" Margin="147,278,0,0" VerticalAlignment="Top" Background="#FFB0EDAD" FontSize="18" Click="Button_Click"/>
+        <Button Content="Удалить из базы" HorizontalAlignment="Left" Margin="353,278,0,0" VerticalAlignment="Top" FontSize="18" Background="#FFF65D4A" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>

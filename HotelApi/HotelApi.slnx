@@ -1,0 +1,7 @@
+<Solution>
+  <Project Path="../HotelDesktop/HotelDesktop.csproj" Id="82ceb7f1-ed5c-4fb0-9473-0d577e9a4b16" />
+  <Project Path="docker-compose.dcproj">
+    <Build />
+  </Project>
+  <Project Path="HotelApi/HotelApi.csproj" />
+</Solution>

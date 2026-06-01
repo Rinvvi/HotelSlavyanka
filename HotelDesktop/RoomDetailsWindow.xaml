@@ -1,0 +1,19 @@
+﻿<Window x:Class="HotelDesktop.RoomDetailsWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:HotelDesktop"
+        mc:Ignorable="d"
+        Title="RoomDetailsWindow" Height="450" Width="800">
+    <Grid x:Name="Управление_номеров" Width="350" Height="392">
+        <Label Content="Регистрация гостя" HorizontalAlignment="Left" Margin="106,10,0,0" VerticalAlignment="Top" FontSize="18"/>
+        <Label Content="ФИО клиента:" HorizontalAlignment="Left" Margin="10,49,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="GuestNameBox" HorizontalAlignment="Left" Margin="101,53,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="239"/>
+        <Label Content="Телефон:" HorizontalAlignment="Left" Margin="10,75,0,0" VerticalAlignment="Top"/>
+        <TextBox x:Name="GuestPhoneBox" HorizontalAlignment="Left" Margin="101,79,0,0" TextWrapping="Wrap" VerticalAlignment="Top" Width="195" TextChanged="GuestPhoneBox_TextChanged"/>
+        <Button Content="Заселение" HorizontalAlignment="Left" Margin="53,154,0,0" VerticalAlignment="Top" Background="#FFC4E5FD" FontSize="18" Click="Button_Click"/>
+        <Button Content="Освобождение" HorizontalAlignment="Left" Margin="198,154,0,0" VerticalAlignment="Top" Background="#FFEE837F" FontSize="18" Click="Button_Click_1"/>
+
+    </Grid>
+</Window>
