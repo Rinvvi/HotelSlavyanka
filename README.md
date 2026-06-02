@@ -21,7 +21,7 @@
 * WPF
 * ASP.NET Core Web API
 * Entity Framework Core
-* PostgreSQL
+* SQLite
 * Git
 * GitHub
 
